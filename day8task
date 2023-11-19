@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <style>
+      .ct{
+        border: 2px solid black;
+        width:100px;
+        padding: 15px;
+        text-align:center;
+        background-color: aliceblue;
+      }
+      .ct1{
+        border:2px double blueviolet;
+        width: 150px;
+        padding: 40px;
+        background-color: aqua;
+      }
+      .ct2{
+        border:2px dashed red;
+        width: 250px;
+        padding: 40px;
+        background-color: peachpuff;
+      }
+      .ct3{
+        border:2px solid black;
+        width: 320px;
+        padding:50px;
+        background-color: lightgreen;
+        
+        
+      }
+    </style>
+</head>
+<body >
+
+  <div class="ct3">grand Parents
+  <div class="ct2">Parents
+   <div class="ct1">children
+   <div class="ct">Grand children</div>
+   </div></div></div>
+   <img src="https://m.media-amazon.com/images/I/81N8rn2NCKL._AC_UF1000,1000_QL80_.jpg" height="300" width="400"
+   
+    
+</body>
+</html>
