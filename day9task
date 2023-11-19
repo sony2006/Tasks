@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     .gradient{
+        height: 200px;
+        width: 200px;
+        background-color:red;
+        border-radius: 50%;
+        background-image: conic-gradient(lightyellow 0deg, lightyellow 90deg, lavender 90deg, lavender 180deg, lightgreen 180deg, lightgreen 270deg, peachpuff 270deg);
+  
+         
+     }
+    </style
+</head>
+<body>
+    <h2>Piechart:</h2>
+<div class="gradient">
+    
+    </div>
+
+    
+</html>
