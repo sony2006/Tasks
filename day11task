@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .sb{
+            border: 1px solid white;
+            width: 300px;
+            height: 80px;
+            text-align: center;
+            background-color:black;
+    
+        }
+        .mb{
+        background-color:black;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 4px;
+        }
+        .p1{
+            color: white;
+        }
+        .p2{
+            margin-left: -160px;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div class="mb">
+        <div class="sb">
+            <p class="p1">B Sony</p>
+            <img class="p2"src="../white microphone.jpg" height="25" width="20"><button style="font-size: 8px;">sony</button>
+        </div>
+            <div class="sb">
+                <p class="p1">Ruchitha</p>
+                <img class="p2"src="../white microphone.jpg"height="20" width="20"><button style="font-size: 8px;">sony</button>
+            </div>
+        <div class="sb">
+            <p class="p1">Sarika</p>
+            <img class="p2"src="../white microphone.jpg"height="20" width="20"><button style="font-size: 8px;">sony</button>
+        </div>
+        <div class="sb">
+            <p class="p1">Deekshithay</p>
+            <img class="p2" src="../white microphone.jpg"height="20" width="20"><button style="font-size: 8px;">sony</button>
+        </div>
+            <div class="sb">
+                <p class="p1">Pranavi</p>
+                <img class="p2" src="../white microphone.jpg"height="20" width="20"><button style="font-size: 8px;">sony</button>
+            </div>
+                <div class="sb">
+                    <p class="p1">Mounika</p>
+                    <img class="p2" src="../white microphone.jpg"height="20" width="20"><button style="font-size: 8px;">sony</button>
+                </div>
+                
+                    <div class="sb">
+                        <p class="p1">Prasanna</p>
+                        <img class="p2" src="../white microphone.jpg"height="20" width="20"><button style="font-size: 8px;">sony</button>
+                    </div>
+                
+                        <div class="sb">
+                            <p class="p1">Pravalika</p>
+                            <img class="p2"src="../white microphone.jpg"height="20" width="20"><button style="font-size: 8px;">sony</button>
+                        </div>
+                        
+                            <div class="sb">
+                                <p class="p1">Sneha</p>
+                                <img class="p2" src="../white microphone.jpg"height="20" width="20"><button style="font-size: 8px;">sony</button>
+                            </div>
+                                <div class="sb">
+                                    <p class="p1">Swetha</p>
+                                    <img  class="p2"src="../white microphone.jpg"height="20" width="20"><button style="font-size: 8px;">sony</button>>
+                                </div>
+                                    <div class="sb">
+                                        <p class="p1">Sudha</p>
+                                        <img class="p2" src="../white microphone.jpg"height="20" width="20"><button style="font-size: 8px;">sony</button>
+                                    </div>
+                                
+                                        <div class="sb">
+                                            <p class="p1">Sruthi</p>
+                                            <img class="p2" src="../white microphone.jpg"height="20" width="20"><button style="font-size: 8px;">sony</button>
+                                        </div>
+                                        
+                                            <div class="sb">
+                                                <p class="p1">Anuradha</p>
+
+                                                <img class="p2"src="../white microphone.jpg"height="20" width="20"><button style="font-size: 8px;">sony</button>
+                                        
+                                            </div>
+                                            
+                                                <div class="sb">
+                                                    <p class="p1">Gayathri</p>
+                                                    <img class="p2"src="../white microphone.jpg"height="20" width="20"><button style="font-size: 8px;">sony</button>
+                                                </div>
+                                                
+                                                    <div class="sb">
+                                                        <p class="p1">Karunya</p>
+                                                        <img class="p2" src="../white microphone.jpg"height="20" width="20"><button style="font-size: 8px;">sony</button>
+                                                    </div>
+                                                    
+                                                        <div class="sb">
+                                                            <p class="p1">Maithili</p>
+                                                            <img class="p2"src="../white microphone.jpg"height="20" width="20"><button style="font-size: 8px;">sony</button>
+                                                        </div>
+                                                        
+                                                            
+
+</body>
+</html>
