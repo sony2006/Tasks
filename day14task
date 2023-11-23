@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        .calc{
+            border-radius:10px;
+            box-shadow: 2px 3px 6px 2px;
+            color: black;
+            margin-inline-start: auto;
+            margin-inline-end: auto;
+            margin-block-start: 2em;
+            max-inline-size:22rem;    
+        }
+        .calculator{
+        font-size: 3rem;
+        padding-block-start: 0.5rem;
+        padding-block-end: 0.5rem;
+        padding-inline-end: 0.75rem;
+        text-align: end;
+        background-color: grey;
+        
+        }
+        .keys{
+            display:grid ;
+            grid-template-columns: repeat(4 , 1fr);
+            gap: 1px;
+
+        }
+        .key{
+            font-size: 1.5rem;
+            border: none;
+            padding-block-start: 1rem ;
+            padding-block-end: 1rem;
+            padding-inline-end: 1.25rem;
+            padding-inline-start: 1.25rem;
+
+
+        }
+        .operator{
+            background: lightblue;
+        }
+        
+        
+        .enter{
+            grid-column: 4 / 5;
+            grid-row: 2 / span 5;
+            background: lightblue;
+        
+        }
+        button:hover{
+            background-color: lightcoral;
+        }
+    
+
+
+    </style>
+</head>
+<body>
+    <div class="calc">
+        <div class="calculator">0
+            <div class="keys">
+                <button class="key operator">+</button>
+                <button class="key operator">-</button>
+                <button class="key operator">x</button>
+                <button class="key operator">%</button>
+                <button class="key">7</button>
+                <button class="key">8</button>
+                <button class="key">9</button>
+                <button class="key">4</button>
+                <button class="key">5</button>
+                <button class="key">6</button>
+                <button class="key">1</button> 
+                <button class="key">2</button>
+                <button class="key">3</button>
+                <button class="key">0</button>
+                <button class="key">.</button>
+                <button class="key1">AC</button>
+                <button class="key1 enter">=</button>
+         
+            </div>
+        
+    </div>
+    
+</body>
+</html>
