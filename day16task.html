@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <title>Netflix</title>
+  <style>
+    *{
+      margin:0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      box-sizing: border-box;
+    }
+    body{
+      background-color: black;
+      color: white;
+    }
+    .header{
+      width: 100%;
+      height: 100vh;
+      background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../netflix\ background.png) ;
+      background-size: cover;
+      background-position: center;
+      padding: 10px 8%;
+      position: relative;
+    }
+    nav{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 0px;
+    }
+    .logo{
+      width:150px;
+      cursor:pointer;
+
+    }
+    nav button{
+      border: 0;
+      outline: 0;
+      background:red ;
+      color: white;
+      padding: 7px 20px;
+      font-size: 12px;
+      border-radius: 4px;
+      margin-left: 10px;
+      cursor: pointer;
+    }
+    .header-content{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      margin-top: 100px;
+    }
+    .header-content h1{
+      font-size: 60px;
+      line-height: 70px;
+      font-weight: 600px;
+      max-width: 650px;
+
+    }
+    .header-content h3{
+      font-weight: 400;
+      margin-bottom: 20px;
+    }
+    .email-signup{
+      background-color: white;
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      margin-top: 30px;
+      overflow: hidden;
+    }
+    .email-signup input{
+      flex: 1;
+      border: 0;
+      outline: 0;
+      margin-left: 20px;
+
+    }
+    .email-signup button{
+      background-color: white;
+      color: red;
+      font-size: 16px;
+      border: 0;
+      outline: 0;
+      cursor: pointer;
+      padding: 15px 30px;
+
+    }
+    .features{
+         padding: 50px 12%;
+         font-size: 22px;
+    }
+    .row{
+      display: flex;
+      width: 100%;
+      align-items: center;
+      flex-wrap: wrap;
+      padding: 50px 0 ;
+    }
+    .text-col{
+          flex-basis: 50%;
+          margin-bottom: 20px;
+    }
+    .img-col{
+      flex-basis: 50%;
+      margin-bottom: 20px;
+    }
+    .img-col img{
+      display: block;
+      width: 90%;
+      margin: auto;
+    }
+    .features h2{
+      margin: 20px;
+    }
+    .fre{
+      padding: 10px 12%;
+      text-align: center;
+      
+    }
+    .lines{
+      margin: 60px auto;
+      width: 100%;
+      max-width: 750px;
+    }
+    .lines li{
+      width: 100%;
+      padding: 5px;
+
+    }
+    .lines li label{
+      display: flex;
+      align-items: center;
+      padding: 20px;
+      background:#303030;
+      margin-bottom: 2px;
+      cursor: pointer;
+      position: relative;
+    }
+    input[type="radio"]{
+      display: none;
+    }
+    .lines .content{
+      background: #303030;
+      text-align: left;
+      padding: 0 20px;
+      max-height: 0;
+      overflow: hidden;
+    }
+    .lines input[type="radio"]:checked + label + .content{
+      max-height: 200px;
+      padding: 30px 20px;
+    }
+    .fre .email-signup{
+      max-width: 600px;
+
+    }
+    .fre small{
+      font-size: 12px;
+    }
+     
+    
+    
+
+
+
+
+  </style>
+</head>
+<body>
+  <div class="header">
+    <nav>
+      <img class="logo" src="https://images.ctfassets.net/y2ske730sjqp/1aONibCke6niZhgPxuiilC/2c401b05a07288746ddf3bd3943fbc76/BrandAssets_Logos_01-Wordmark.jpg?w=940"/>
+     <div>
+       <button>English</button>
+       <button>Sign In</button>
+     </div>
+    </nav>
+    <div class="header-content">
+      <h1>Unlimited movies,TV shows and more.</h1>
+    <h3>Watch anywhere.Cancel anytime.</h3>
+    <p>Ready to watch? Enter your email to create or restart your membership.</p>
+   <form class="email-signup">
+    <input type="email" placeholder="Email address" required>
+    <button type="button" class="btn btn-danger">Get Started</button>
+  </form>
+  </div>
+  </div>
+  <div class="features">
+    <div class="row">
+      <div class="text-col">
+        <h2>Enjoy on your TV.</h2>
+        <P>Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray, players and more.</P>
+    </div>
+    <div class="img-col">
+      <img src="https://www.flixicam.com/img/blog/watch-netflix-on-tv.jpg">
+    </div>
+    </div>
+    <div class="row">
+      <div class="img-col">
+        <img src="https://media.wired.com/photos/59269911cfe0d93c47430c51/master/w_2560%2Cc_limit/Netflix-Download-now2.jpg">
+      </div>
+      <div class="text-col">
+        <h2>Download your shows to watch offline.</h2>
+        <P>Save your favourite easily and alwaqys have somwthing to watch.</P>
+    </div>
+    </div>
+    <div class="row">
+      <div class="text-col">
+        <h2>Watch everywhere.</h2>
+        <P>Stream unlimited movies and TV shows on your phone, teblet, laptop, and TV.</P>
+    </div>
+    <div class="img-col">
+      <img src="https://images.ctfassets.net/4cd45et68cgf/ak3No94rWAFzgTQ5psied/03d8fb2b4c57159ba6292755eeeebfd3/CompanyTimeline-2016.jpg?w=2000">
+    </div>
+    <div class="row">
+      <div class="img-col">
+        <img src="https://www.cnet.com/a/img/resize/08abf5c0ddf16ba44c30a9105d64bf74cef43739/hub/2021/07/14/cbe50b8f-28bd-4fa2-aed9-dc1c310b6dee/screen-shot-2021-07-14-at-8-30-29-am.png?auto=webp&fit=crop&height=675&width=1200">
+      </div>
+      <div class="text-col">
+        <h2>Create profiles for children.</h2>
+        <P>Send children on adventures with their favourite characters in a space made just for them-free with your membership.</P>
+    </div>
+     
+  </div>
+  <div class="fre">
+    <h2>Frequently Asked Questions</h2>
+    <ul class="lines" type="none">
+      <li>
+        <input type="radio" name="lines" id="first">
+        <label for="first">What is Netflix?</label>
+        <div class="content">
+          <p>Netflix is a subscription-based streaming service that allows our members to watch TV shows and movies on an internet-connected device.   
+
+            Depending on your plan, you can also download TV shows and movies to your iOS, Android, or Windows 10 device and watch without an internet connection.
+            
+            If you're already a member and would like to learn more about using Netflix, visit Getting started with Netflix.
+            
+            </p>
+        </div>
+
+      </li>
+      <li>
+        <input type="radio" name="lines" id="second">
+        <label for="second">How much does Netflix cost?</label>
+        <div class="content">
+          <p>Netflix Subscription Plans 2023
+            Currently, Netflix has four plans in the country.  These plans start at Rs 149 and go up to Rs 649. Each plan offers a different number of screens on which content can be viewed simultaneously. Here’s a list of all the plans that Netflix has to offer you:
+            
+            </p>
+        </div>
+
+      </li>
+      <li>
+        <input type="radio" name="lines" id="third">
+        <label for="third">How do i cancel?</label>
+        <div class="content">
+          <p>Open Netflix. Go into Netflix, whether on the website or the app, and log into your account to kick the process off.
+            Click on the Profile button in the top right-hand corner. ...
+            Click on Account. ...
+            Click Cancel Membership. ...
+            Click Finish Cancellation.
+            
+            
+            </p>
+        </div>
+
+      </li>
+      <li>
+        <input type="radio" name="lines" id="fourth">
+        <label for="fourth">Where can i watch?</label>
+        <div class="content">
+          <p>Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on the web at netflix.com from your personal computer or on any internet-connected device that offers the Netflix app, including smart TVs, smartphones, tablets, streaming media players and game consoles.</p>
+         </div>
+       </li>
+       <li>
+      <input type="radio" name="lines" id="fiftht">
+      <label for="fifth">What can i watch on Netflix?</label>
+      <div class="content">
+        <p>Only on Netflix
+          Netflix is the home of amazing original programming that you can’t find anywhere else. Movies, TV shows, specials and more, all tailored specifically to you.</p>
+      </div>
+   </li>
+  <li>
+  <input type="radio" name="lines" id="sixth">
+  <label for="sixth">Is Netflix good for kids?</label>
+  <div class="content">
+    <p><mark>Netflix has an enormous library of kid-friendly content,</mark> including a host of original choose-your-own-adventure stories, but it's natural as a parent to want to know what your kids is watching. So, to help you find something quickly, we keep tabs on the collection every month and surface the best options here.</p>
+  </div>
+
+</li>
+    </ul>
+    <small>Ready to watch? Enter your email to create or restart your membership.</small>
+    <form class="e-mail signup">
+    <input type="email" placeholder="Email address" required>
+    <button type="button" class="btn btn-danger">Get Started</button>
+    </form>
+  </div>
+      
+
+  
+</body>
+</html>
