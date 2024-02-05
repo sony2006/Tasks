@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            height:200px;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+
+ <!-- <img id =" sony12"   src = "https://symbl-world.akamaized.net/i/webp/c1/9a4b5216a288ab979ac04d08856edd.webp">  -->
+</body>
+<script>
+     var img12 = document.createElement("img");
+     img12.setAttribute("src","emoji.webp");
+     document.body.appendChild(img12);
+     img12.style.marginLeft = "550px";
+
+    var brr=document.createElement("br")
+    document.body.appendChild(brr)
+
+
+    var buttoncr=document.createElement("button")
+    buttoncr.innerText="Click to rotate"
+    document.body.appendChild(buttoncr)
+    buttoncr.style.marginLeft="500px"
+    buttoncr.addEventListener("click",hello)
+    function hello(){
+        img12.style.transform="rotate(200deg)"
+    }
+
+    var button2=document.createElement("button")
+    button2.innerText="Click to original"
+    document.body.appendChild(button2)
+    button2.style.marginLeft="100px"
+    button2.addEventListener("click",hi)
+    function hi(){
+        img12.style.transform="none"
+    }
+    
+
+</script>
+</html>

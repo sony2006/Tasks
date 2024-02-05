@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //print reverse string
+    a = "Sonyyadav"
+    for(i=a.length-1;i>=0;i--){
+       console.log(a[i]);
+    }
+    //create a slice function
+    var a = "sonyyadav"
+    c = " "
+    for (i=0;i<a.length;i++){
+        if(i>2 && i<8){
+            c = c+a[i]
+        }
+    }
+    console.log(c)
+    // write a program to print the values count in a string
+    a = " sony yadav "
+    c = 0
+    for(i=0;i<a.length;i++){
+        if(a[i]!=""){
+            c=c+1
+        }
+    }
+    console.log(c)
+    // write a program to remove underscores in a string a make a new string
+    a = "-sony-yadav-b"
+    c = ""
+    for(i=0; i<a.length;i++){
+        if(a[i]!="-"){
+            c=c+a[i]
+        }
+    }
+    console.log(c)
+    //write a prgrm to print the spaces
+    a = " sony yadav "
+    c = 0
+    for(i=0;i<a.length;i++){
+        if(a[i]==" "){
+            c=c+1
+        }
+    }
+    console.log(c)
+    //write a progrm to print the capital letters in the string
+    a = "SonyYadaV"
+    c =" "
+    for(i=0;i<a.length;i++){
+    if(a.charCodeAt(i)>65 && a.charCodeAt(i)<95){
+        c=c+a[i]
+    }
+
+}
+ console.log(c)
+ a = "AbcDrT"
+ b=" "
+ for(i=0;i<a.length;i++){
+    if(a.charCodeAt(i)>65 && a.charCodeAt(i)<90){
+        b=b+a[i]
+    }
+ }
+ console.log(b)
+    </script>
+</body>
+</html>

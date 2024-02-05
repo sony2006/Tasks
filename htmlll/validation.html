@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    table,tr,th,td{
+        border: 1px solid #000;
+        border-collapse: collapse;
+    }
+</style>
+<body>
+ <table>
+    <tr>
+        <th>FirstName</th>
+        <th>SecondName</th>
+        <th>Mobilenum</th>
+        <th>EmailId</th>
+    </tr>
+
+    <tr>
+        <td class="one"></td>
+        <td class="two"></td>
+        <td class="three"></td>
+        <td class="four"></td>
+        
+    </tr>
+    <tr>
+        <td class="one"></td>
+        <td class="two"></td>
+        <td class="three"></td>
+        <td class="four"></td>
+    </tr>
+    <tr>
+        <td class="one"></td>
+        <td class="two"></td>
+        <td class="three"></td>
+       -+ <td class="four"></td>
+    </tr>
+ </table>
+ <script>
+
+    var getData = localStorage.getItem("registerdata");
+
+     var bb = JSON.parse(getData);
+
+     console.log(bb);
+
+    var firstRow = document.getElementsByClassName("one");
+
+    for(i=0;i<bb.length;i++){
+        firstRow[i].innerText=bb[i].firstname;
+    }
+
+    var secondRow = document.getElementsByClassName("two");
+
+    for(i=0;i<bb.length;i++){
+        secondRow[i].innerText=bb[i].lastname;
+    }
+
+    var thirdRow = document.getElementsByClassName("three");
+
+    for(i=0;i<bb.length;i++){
+        thirdRow[i].innerText=bb[i].mobilenum;
+    }
+    var fourthRow = document.getElementsByClassName("four");
+
+    for(i=0;i<bb.length;i++) {
+    fourthRow[i].innerText=bb[i].emailid;
+  }
+
+
+     
+
+     
+    
+ </script>   
+</body>
+</html>

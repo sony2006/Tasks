@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    img{
+        height: 150px;
+        width: 150px;
+    }
+    button:hover{
+        background-color: brown;
+    }
+</style>
+<body>
+</body>
+<script>
+     var sony1 = [
+        {
+            "id":"ASIAN",
+            "description":"ASIAN Mens Wonder-3",
+            "price":"$598",
+            "image":"https://images.meesho.com/images/products/276880/tpfa5_512.webp"
+        },
+        {
+        "id":"APPLE",
+            "description":"APPLE Mackbook 12inch",
+            "price":"$900000",
+            "image":"https://images.jdmagicbox.com/quickquotes/images_main/macbook_12_inch_512_gb_rose_gold_148956689183919500.jpg"
+        },
+        {
+            "id":"OPPO",
+            "description":"Latest oppo smart models",
+            "price":"$27000",
+            "image":"https://opsg-img-cdn-gl.heytapimg.com/epb/202302/15/eUXJPB6WHLMbWC4P.png"
+        },
+        {
+            "id":"FROCK",
+            "description":"Girls Dresses",
+            "price":"$2000",
+            "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZQ8JR5_bu7b1kAB8gnxGy2y6beZ3mV6v9YA&usqp=CAU"
+        },
+        {
+            "id":"UTENSILS",
+            "description":"Essentials tools and Pots",
+            "price":"$1000",
+            "image":"https://www.archanaskitchen.com/images/archanaskitchen/0-Archanas-Kitchen-Recipes/2018/Article-2018/8d26dba169645749d8097f7d2b4cc197_XL.jpg "
+        },
+        {
+            "id":"HOODIE",
+            "description":"Sheetal fancy hooded sweater",
+            "price":"$500",
+            "image":"https://5.imimg.com/data5/XK/YV/MY-16435436/sweater-women-hooded.jpg"
+        },
+        {
+            "id":"BOAT",
+            "description":"boat airdopes 131",
+            "price":"$1200",
+            "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQb96D30vdK73qvrj8t6JClkQ8of1cTm2uccA&usqp=CAU"
+        },
+        {
+            "id":"BOAT",
+            "description":"Headphones",
+            "price":"$1200",
+            "image":"https://itportal.co.in/wp-content/uploads/2022/11/d-5.jpg"
+        },
+        {
+            "id":"TELEVISION",
+            "description":"Indias Best TV",
+            "price":"$25000",
+            "image":"https://www.hindustantimes.com/ht-img/img/2023/09/26/1600x900/best_TV_in_India_1695736021888_1695736035643.JPG"
+        },
+        {
+            "id":"FLOWER VASE",
+            "description":"RED WHITE flower vase",
+            "price":"$1200",
+            "image":"https://m.media-amazon.com/images/I/71Q+ws9aTRL.jpg"
+        },
+        {
+            "id":"DINING TABLE",
+            "description":"Solid wood dining table",
+            "price":"$30000",
+            "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQb96D30vdK73qvrj8t6JClkQ8of1cTm2uccA&usqp=CAU"
+        },
+        
+
+        {
+            "id":"CAMERA",
+            "descrition":"Best 4K Camera",
+            "price":"$20000",
+            "image":"https://images.herzindagi.info/image/2023/Nov/4k-Camera.jpg"
+        }];
+        var main12 = document.createElement("div");
+        main12.style.height = "fit-content";
+        main12.style.display = "flex";
+        main12.style.flexWrap = "wrap";
+        main12.style.padding = "20px";
+        main12.style.gap = "20px";
+        main12.style.justifyContent = "center";
+
+    for(i=0;i<sony1.length;i++){
+        var cart1 = document.createElement("div");
+        cart1.style.border = "1px solid black";
+        cart1.style.textAlign = "center";
+
+        var cartimage = document.createElement("img");
+        cartimage.setAttribute("src",sony1[i].image);
+        
+        var cartcontent = document.createElement("div");
+        cartcontent.style.height = "200px";
+        cartcontent.style.width = "200px";
+        cartcontent.style.textAlign = "center";
+        cartcontent.style.paddingTop = "7px";
+        cartcontent.style.backgroundColor="grey"
+
+        var cartid = document.createElement("h4")
+        cartid.innerText = sony1[i].id;
+
+        var cartdesc = document.createElement("text");
+        cartdesc.innerText = sony1[i].description;
+
+        var cartprice = document.createElement("h5");
+        cartprice.innerText = sony1[i].price;
+        cartprice.style.color="red"
+
+      
+
+
+
+
+        main12.appendChild(cart1);
+        cart1.appendChild(cartimage);
+        cart1.appendChild(cartcontent);
+        cartcontent.appendChild(cartid);
+        cartcontent.appendChild(cartdesc);
+        cartcontent.appendChild(cartprice);
+
+      
+        var button1 =document.createElement("button");
+        button1.innerText = "Buy Now";
+        button1.style.color = "orange"
+        cartcontent.appendChild(button1);
+
+        // var button12 =document.createElement("button");
+        // button12.innerText = "ADD TO CART";
+        // cartcontent.appendChild(button12);
+
+
+}
+  document.body.appendChild(main12);
+
+
+
+
+
+
+
+
+
+
+
+
+     
+</script>
+</html>

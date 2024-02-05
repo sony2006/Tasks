@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //Write a prgrm to print the nums in array that end with zero $ count the end with zero
+   /* count = 0
+    a = [20,30,25,40,66]
+    for(i=0;i<a.length;i++){
+        if(a[i]%10==0){
+         count=count+1
+          
+        }
+    }
+     console.log(count)
+     //for in
+     count=0
+     a = [20,30,25,40,66]
+     for(i in a){
+     if(a[i]%10==0){
+         count=count+1
+     }
+    }
+    console.log(count)
+    //for of
+    count=0
+     a = [20,30,25,40,66]
+     for(i of a){
+     if(i%10==0){
+         count=count+1
+     }
+    }
+    console.log(count)
+    //write a program to print the even numbers
+    sum=0
+    a = [2,3,5,7,6,4,8]
+    for(i in a){
+        if(a[i]%2==0){
+            sum = sum + a[i]
+        }
+    }
+    console.log(sum)
+
+     
+     // Fibonacci series
+      num = 10;//parseInt(prompt("Enter the num of series"));
+     console.log("Fibonacci series");
+     let n1 = 0, n2 = 1, nextTerm;
+     for(let i = 1; i<=num;i++){
+        console.log(n1);
+        nextTerm = n1+n2;
+        n1=n2;
+        n2=nextTerm;
+     }
+     //factorial of a num
+     const number = 4 //parseInt(prompt('Enter a positive integer: '));
+
+// checking if number is negative
+// if (number < 0) {
+//     console.log('Error! Factorial for negative number does not exist.');
+// }
+ if (number === 0) {
+    console.log(`The factorial of ${number} is 1.`);
+}
+
+
+else  {
+    let fact = 1;
+    for (i = 1; i <= number; i++) {
+        fact = fact*i;
+    }
+    console.log(`The factorial of ${number} is ${fact}.`);
+}
+// print length of a string without using length method
+//  name = "sony"
+//  for(f in i){
+//     console.log(a[i]);
+//  }
+  //print length of a string without using length method
+  function length(a)
+  {
+    count=0;
+    for(i=0;a[i]!=undefined;i++)
+    {
+        count++;
+
+    }
+    document.write(count);
+  }
+  length("sony")*/
+ // num = 4;
+ // a=0;
+//   b=1;
+//   c=0;
+//   for(i=1;i<=num;i++){
+    
+//       console.log(a);
+//          c=a+b
+//          a=b
+//          b=c
+    
+
+// }
+// //console.log(a);
+ str="Onecompiler"
+ //count=""
+ vowel="aeiouAEIOU"
+v=str.match(/[aeiou]/gi)
+console.log(v);
+     
+     
+    </script>
+</body>
+</html> 

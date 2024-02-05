@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    table,td,tr,th{
+        border: 2px solid black;
+        border-collapse: collapse;
+    }
+</style>
+<body>
+    <table>
+
+    </table>
+<script>
+    var a = document.createElement("th")
+    a.innerText="ID"
+    var tab3 = document.getElementsByTagName("table");
+        tab3[0].appendChild(a)
+        var a = document.createElement("th")
+    a.innerText="Email"
+    var tab3 = document.getElementsByTagName("table");
+        tab3[0].appendChild(a)
+        var a = document.createElement("th")
+    a.innerText="UserName"
+    var tab3 = document.getElementsByTagName("table");
+        tab3[0].appendChild(a)
+        var a = document.createElement("th")
+    a.innerText="Education"
+    var tab3 = document.getElementsByTagName("table");
+        tab3[0].appendChild(a)
+        
+        
+
+    var sony = [ {id:1,
+                  email:"sony.yadav7386@gmail.com ",
+                  username:"sony20",
+                  education:"Engineering"},
+
+                  {id:2,
+                  email:"sai.yadav7386@gmail.com ",
+                  username:"sai11",
+                  education:"Pharmacy"},
+
+                  {id:3,
+                  email:"kumar.yadav7386@gmail.com ",
+                  username:"kumar07",
+                  education:"Medical"},
+               ];
+        var creation1 = document.createElement("tr");
+        var td1 = document.createElement("td");
+        td1.innerText=sony[0].id
+        var td2 = document.createElement("td");
+        td2.innerText=sony[0].email
+        var td3 = document.createElement("td");
+        td3.innerText=sony[0].username
+        var td4=document.createElement("td")
+        td4.innerText=sony[0].education
+
+        creation1.appendChild(td1);
+        creation1.appendChild(td2);
+        creation1.appendChild(td3);
+        creation1.appendChild(td4);
+        var td5 = document.createElement("td")
+        creation1.appendChild(td5)
+        var btn1 = document.createElement("button");
+        btn1.innerText="Submit"
+        td5.appendChild(btn1)
+
+
+
+
+        var tab = document.getElementsByTagName("table");
+        tab[0].appendChild(creation1)
+        var creation1 = document.createElement("tr");
+        var td1 = document.createElement("td");
+        td1.innerText=sony[1].id
+        var td2 = document.createElement("td");
+        td2.innerText=sony[1].email
+        var td3 = document.createElement("td");
+        td3.innerText=sony[1].username
+        var td4=document.createElement("td")
+        td4.innerText=sony[1].education
+        creation1.appendChild(td1);
+        creation1.appendChild(td2);
+        creation1.appendChild(td3);
+        creation1.appendChild(td4)
+        var td5 = document.createElement("td")
+        creation1.appendChild(td5)
+        var btn1 = document.createElement("button");
+        btn1.innerText="Submit"
+        td5.appendChild(btn1)
+
+
+
+
+        var tab1 = document.getElementsByTagName("table");
+        tab1[0].appendChild(creation1)
+        var creation1 = document.createElement("tr");
+        var td1 = document.createElement("td");
+        td1.innerText=sony[2].id
+        var td2 = document.createElement("td");
+        td2.innerText=sony[2].email
+        var td3 = document.createElement("td");
+        td3.innerText=sony[2].username
+        var td4=document.createElement("td")
+        td4.innerText=sony[2].education
+        creation1.appendChild(td1);
+        creation1.appendChild(td2);
+        creation1.appendChild(td3);
+        creation1.appendChild(td4)
+        var tab2 = document.getElementsByTagName("table");
+        tab2[0].appendChild(creation1)
+
+
+
+        var td5 = document.createElement("td")
+        creation1.appendChild(td5)
+        var btn1 = document.createElement("button");
+        btn1.innerText="Submit"
+        td5.appendChild(btn1)
+
+
+
+        
+
+        
+        
+
+</script>
+</body>
+</html>

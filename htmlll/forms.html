@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        border: 2px solid black;
+        height: 250px;
+        width: 200px;
+        text-align: center;
+    }
+</style>
+<body>
+    <h3>Regitration</h3>
+    <button>register</button>
+    <h3>Login</h3>
+    <button>Login</button>
+</body>
+<script>
+    var sony1 = document.getElementsByTagName("button")
+    sony1[0].addEventListener("click",hello)
+    function hello(){
+        var a = prompt("Enter username")
+        var aa = prompt("Enter password")
+        window.localStorage.setItem("username:", a)
+        window.localStorage.setItem("password:",aa)
+    }
+    
+</script>
+</html>
