@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src = "https://kit.fontawesome.com/1935d064dd.js" crossorigin ="anonymous"></script>
+    <style>
+        /* :root{
+            --white:#fff;
+            --black:black;
+            --blue:#31326f;
+            --light-blue:#005490;
+            --color-sec:orange;
+            --color-grey:#eee;
+            --color-dark-grey:#222831;
+
+        } */
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing:border-box;
+        }
+        html{
+            font-size: 10px;
+        }
+        body{
+            font-family: 'Open Sans', sans-serif;
+            background: url('https://static.toiimg.com/thumb/msid-101151888,width-1280,height-720,resizemode-4/101151888.jpg') no-repeat center;
+            background-size: cover;
+            background-attachment: fixed;
+            height: 100vh;
+            position: relative;
+          }
+        body::after{
+            content:"";
+            position:fixed;
+            top: 0;
+            left: 50%;
+            height: 100%;
+            width: 900px;
+            background: rgba(0,0,0,.6);
+            background-attachment: fixed;
+            z-index: -1;
+            transform: translateX(-50%);
+        }
+        p{
+            font-size: 1.6rem;
+            line-height: 1.5;
+        }
+        img{
+            width: 100%;
+        }
+        .container{           
+             max-width: 900px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        header.container{
+            padding: 4 rem 0;
+            text-align: center;
+            background-color: var(--color-sec);
+            border-radius: 0 0 5rem 5rem;
+            margin-bottom: 2rem;
+        }
+        header h1{
+            font-size: 3rem;
+            color: #fff;
+            padding-bottom: 1rem;
+        }
+        /* form input{
+            width: 50px;
+            border-radius: 1rem 0 1rem 0;
+            margin-right: 3px;
+            border-bottom: 3px solid var(--color-primary);
+        }
+        form button{
+            background-color: var(--color-primary);
+            color: #fff;
+            border: 1px solid transparent;
+            border-radius: 3px;
+            cursor: pointer;
+        } */
+        form button:hover{
+            border: 1px solid #fff;
+        }
+        section .container{
+            display:block;
+            margin-right: 0 auto;
+            text-align: center;
+            color: #fff;
+            padding: 3rem 0;
+        }
+        .songs{
+            width: 70%;
+            list-style: none;
+            margin: 0 auto;
+            padding: 2rem 0;
+        }
+        .songs li{
+            font-size: 1.4rem;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 5px 0;
+            border-bottom: 1px solid white;
+        }
+        .songs li span{
+            font-size: 1.4rem;
+            background-color: var(--color-primary);
+            padding: 5px;
+            margin:5px;
+            outline: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        form{
+            position: relative;
+            display: flex;
+            width: 600px;
+            height: 28px;
+            justify-content: center;
+            margin-left: 100px;
+
+        }
+        h1{
+            margin-left: 260px;
+        }
+
+
+
+
+     </style>
+</head>
+<body>
+    <header>
+        
+            <div class ="container">
+                <h1>Lyrics Search App</h1>
+              <form action = "" id = "form">
+                <input type ="text" placeholder ="Search artiste or song" id ="search">
+                <button>search</button>
+            </form>
+            </div>
+        </header>
+        <section>
+            <div class ="container" id ="result">
+                <p>Enter Song or Artiste in the Field above</p>
+            </div>
+        </section>0
+        <script>
+            const form = document.getElementById("form");
+            const search = document.getElementById("search");
+            const result = document.getElementById("result"); 
+            const apiURL = 'https://api.lyrics.ovh';
+            // const apiURL = '';
+
+
+            form.addEventListener("submit", e => {
+                e.preventDefault();
+                let searchValue = search.value.trim();
+
+                if (!searchValue) {
+                    alert("Nothing to search")
+                }else{
+                    beginSearch(searchValue);
+                }
+            })
+        
+            async function beginSearch(searchValue){
+                const searchResult = await fetch(`${apiURL}/suggest/${searchValue}`);
+                const data = await searchResult.json();
+                // console.log(data)
+                displayData(data);
+            }
+
+            function displayData(data){
+                result.innerHTML =  `<ul class = "songs">
+                    ${data.data.map(song=> `<li>
+                        <div>
+                            <strong> ${song.artist.name}</strong> - ${song.title}
+                            </div>
+                            <span data-artist="${song.artist.name}"
+                            data-songtitle="${song.title}">Get Lyrics</span>
+                            </li>`
+                            )
+                            .join('')
+                        }
+                        </ul>
+                        `;
+
+            }
+            result.addEventListener("click",e =>{
+                const clickedElement = e.target;
+                if(clickedElement.tagName === 'SPAN'){
+                    const artist = clickedElement.getAttribute('data-artist');
+                    const songTitle = clickedElement.getAttribute('data-songtitle');
+                    getLyrics(artist.songTitle);
+                }
+            })
+            async function getLyrics(artist,songTitle){
+                const response = await fetch (`${apiURL}/v1/${artist}${songTitle}`);
+                const data = await response.json();
+                const lyrics = data.lyrics.replace(/(\r\n|\r\n)/g,  '<br>');
+                result.innerHTML = `<h2><strong>${artsit}</strong>-${songTitle}</h2>
+                <p>${lyrics}</p>`;
+            }
+
+       
+
+
+
+        </script>
+    
+</body>
+</html>
